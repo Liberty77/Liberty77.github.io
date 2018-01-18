@@ -1,17 +1,521 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Clazz</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
-    crossorigin="anonymous">
+    <title>微公学-高等教育一体化智能解决方案</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0" />
+
+    <script src="http://localhost:35729/livereload.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
+    <link type="text/css" rel="stylesheet" href="css/clazz.css">
+    <link rel="icon" type="image/svg+xml" href="imgs/favicon.svg" sizes="any" />
+    <link rel="icon" type="image/png" href="imgs/favicon.png" sizes="any" />
+
 </head>
 
 <body>
-  <div id="app"></div>
-  <!-- built files will be auto injected -->
+    <header>
+        <div id="navbarWrapper" class="mt-3" style="background-color: white">
+            <div class="container">
+                <nav class="navbar navbar-expand-md">
+                    <a class="navbar-brand" href="#">
+                        <img src="imgs/edulogox.svg" height="40" alt="Clazz">
+                    </a>
+                    <button class="navbar-toggler mt-2" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav1">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link nav-button" href="#clazz-features-tag">功能
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-button" href="#clazz-integrations-tag">集成</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link nav-button" href="#clazz-school-tag">学校</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link nav-button" href="#clazz-price-tag">价格</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" style="cursor:pointer" data-toggle="modal" data-target="#my-modal" data-backdrop="static">登录</a>
+                            </li>
+                        </ul>
+                        <a class="btn btn-empty ml-md-3 start-use" style="cursor:pointer" data-toggle="modal" data-target="#my-modal" data-backdrop="static">开始使用</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="fdb-block hero-homepage" style="background-image: url(imgs/header_bg.svg);">
+        <div class="container-fluid mt-3" style="max-width:1400px;">
+            <div class="row justify-content-around">
+
+                <div class="col-md-2 col-xs-1 mt-4"></div>
+                <div class="col-md-5 mt-5 text-center">
+                    <h1>高等教育一体化智能解决方案</h1>
+                    <p class="text-h3 mx-auto">微公学为全球大学提供智能教育一体化解决方案，满足学校、老师、学生日常教学、学习、生活方面信息服务及能力提升优化方案.</p>
+                    <p class="mt-5">
+                        <!-- <a class="btn" href="https://froala.com/design-blocks#playground">开始免费使用</a> -->
+                        <a class="btn start-use-free" style="cursor:pointer" data-toggle="modal" data-target="#my-modal" data-backdrop="static">开始免费使用</a>
+                    </p>
+                </div>
+                <div class="col-md-2 col-xs-1 mt-4 text-center">
+                    <div class="col-md-12">
+                        <img src="imgs/clazz-code.png" alt=" " width="100%" height="100%">
+                    </div>
+                    <div class="col-md-12 mt-4">
+                        <button type="button" class="btn btn-default">
+                            <i class="fa fa-apple"></i>&nbsp;&nbsp;&nbsp;iPhone版
+                        </button>
+                    </div>
+
+                    <div class="col-md-12 mt-4">
+                        <button type="button" class="btn btn-default">
+                            <i class="fa fa-android"></i>&nbsp;&nbsp;&nbsp;Android版
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="fdb-block" style="background-color: #F4F5F7; padding-top: 40px; padding-bottom: 0px;">
+        <div class="container mr-0 pr-0" style="max-width:1420px;">
+            <div class="row text-left align-items-left pt-5 pb-md-5">
+                <div class="col-md-4">
+                    <div class="p--oversized block block--heading-text-block">
+                        <h2>为更智能大学设计</h2>
+                        <p>智能教育系统让老师、学生成为教育信息的主导者，每个环节都为你的教学、学习过程设计，抛弃繁复与己无关的教育系统，拥抱智能教育信息系统。</p>
+                    </div>
+                    <hr class="blue-line">
+                    <div class="image-heading-textblock ">
+                        <div class="image-heading-textblock__image-left">
+                            <img class="" src="https://bitbucket-marketing-cdn.atlassian.com/dam/jcr:990665ae-1842-422f-905a-62765e4fa3cd/Asset%201.svg?cdnVersion=if"
+                                alt="arm icon" width="42">
+                        </div>
+                        <div class="image-heading-textblock__textblock-right" style="width: calc(100% - 42px)">
+                            <h3>
+                                教育信息再无需四处搜寻</h3>
+                            <p>
+                                你真的了解你们学校的官网吗？每次找和你相关的信息是不是有种大海捞针的感觉呢？看着九十年代设计的网页，是否每次都在怀疑这些信息是不是真的和你相关呢？难道还要给辅导员打个电话确认一下吗？忘掉这些吧，微公学让你不需要四处去找信息。</p>
+                        </div>
+                    </div>
+                    <div class="image-heading-textblock padding-b40">
+                        <div class="image-heading-textblock__image-left">
+                            <img class="" src="https://bitbucket-marketing-cdn.atlassian.com/dam/jcr:674957ce-149f-4dc6-aa2b-b2b6886742a2/Asset%202.svg?cdnVersion=if"
+                                alt="scale icon" width="42">
+                        </div>
+                        <div class="image-heading-textblock__textblock-right" style="width: calc(100% - 42px)">
+                            <h3>
+                                只接收与自己相关的教育信息</h3>
+                            <p>不论你是学生还是老师，在微公学，只会接收到只和自己相关的教育信息，没错它就是只为你设计的。而且微公学还会针对你的状态，帮你提升个人能力哦。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 mr-0 pr-0">
+                    <img src="https://bitbucket-marketing-cdn.atlassian.com/dam/jcr:ee79aeac-e860-4031-bac1-cd529df31635/bitbucket%20pull%20request%20browser%20highlighted.png?cdnVersion=if"
+                        alt="Pull Requests" width="100%" class="overflow scale-1-0 transform-origin-left" style="margin-bottom: 5%;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="clazz-features-tag"></div>
+
+    <section class="fdb-block" id="clazz-features">
+        <div class="container">
+            <div class="row text-left align-items-center pt-5 pb-md-5 container">
+                <div class="col-md-6">
+                    <img alt="news" class="img-fluid" src="./imgs/features/clazz-news.png">
+                </div>
+                <div class="col-md-6">
+                    <h2>
+                        <strong>校园官方新闻、通知</strong>
+                    </h2>
+                    <p class="text-h3 padding-right-50px">
+                        官网的新闻太冗杂，校内的公告通知太滞后？而我也只是想看到和我相关的新闻、通知。加入我们，我们平台会为你筛选，甄别。通过我们的平台，你不仅可以看到只和你相关的新闻、通知，还可以针对不同的大学群体发布新闻、通知。 这样，你将眼有余力地看到热门有趣的新闻，及时的通知公告，为你的大学学习生活再加速···
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div style="background-color: #F4F5F7;">
+            <div class="container">
+                <div class="row text-left align-items-center pt-5 pb-md-5 container">
+                    <div class="col-md-6">
+                        <h2>
+                            <strong>学习课程表、图书馆</strong>
+                        </h2>
+                        <p class="text-h3 padding-right-50px">
+                            我们已成功完成和部分高校教务系统对接，并可以一键自动录入课程表到手机。同时，你也可以通过查找添加你感兴趣的课程。课表太单调，你可以方便的切换成日程表，在这里，我们根据你的课表时间安排为你推荐了有趣的校内活动，讲座。 如果你的学校有我们图书馆系统集成，那你在图书馆模块可以方便地查询校馆藏书的借阅信息，并支持一键续借。
+                        </p>
+                    </div>
+
+                    <div class="col-md-6 text-center">
+                        <img alt="image" class="img-fluid timetable" src="./imgs/features/clazz-course.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row text-left align-items-center pt-5 pb-md-5 container">
+                <div class="col-md-6">
+                    <img alt="image " class="img-fluid" src="./imgs/features/clazz-activity.png">
+                </div>
+
+                <div class="col-md-6">
+                    <h2>
+                        <strong>校园动态、讲座</strong>
+                    </h2>
+                    <p class="text-h3 padding-right-50px">
+                        校园的生活太单调，找不到大学生活的兴趣点？加入我们吧，我们平台整合了许多有趣的大学生活点（个人动态，失物招领，兼职，跳蚤市场，社团···）。在这里，你们可以交流，可以交友，发掘发现大学生活的趣点。你会发现，大学的生活原来可以这么简单而不失活力</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="background-color: #F4F5F7;">
+            <div class="container">
+                <div class="row text-left align-items-center pt-5 pb-md-5 container">
+                    <div class="col-md-6">
+                        <h2>
+                            <strong>智能课件、教学直播</strong>
+                        </h2>
+                        <p class="text-h3 padding-right-50px">
+                            通过我们平台提供的软件，老师可以轻松地制作智能课件，同时也支持将传统的ppt文件转化为智能课件。在直播模块，老师可以通过智能课件进行直播教学，实时地与学生交流互动。学生在老师直播过程中遇到不懂的问题尽可能提出来，在线老师可以方便快捷的进行线上答疑。
+                    </div>
+
+                    <div class="col-md-6 text-center">
+                        <img alt="image" class="img-fluid live" src="./imgs/features/clazz-live.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="clazz-integrations-tag"></div>
+    <section class="fdb-block pb-0 container" id="clazz-integrations">
+        <div class="container">
+            <div class="row text-left">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <h1>集成</h1>
+                    <p class="text-h3">方便、快捷接入微公学。
+                    </p>
+                    <br>
+                    <p class="text-h3">学校集成 联系: 15163299602
+                    </p>
+                    <p class="mt-4 ">
+                        <a href="#clazz-integrations" class="btn">联系我们</a>
+                    </p>
+                </div>
+                <div class="col-12 col-sm-4 col-md-6 col-lg-4 m-auto pt-5 integrations-imags">
+                    <img alt="image " id="yellow-block" class="img-fluid animate-bounce-down" src="./imgs/block-hover.png">
+                    <img alt="image " class="img-fluid" src="./imgs/illustration-block-builders.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="clazz-school-tag"></div>
+    <section class="fdb-block cooperate container" id="clazz-school">
+        <div class="cooperate-school">
+            <div class="container">
+                <h2>全国各高校接入中...</h2>
+                <div class="school-groups">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-6 col-sm-6 col-12 school-singal">
+                            <img src="./imgs/school/qinghua.png" alt="">
+                        </div>
+                        <div class="col-lg-2 col-md-6 col-sm-6 col-12 school-singal">
+                            <img src="./imgs/school/beida.png" alt="">
+                        </div>
+
+                        <div class="col-lg-2 col-md-6 col-sm-6 col-12 school-singal">
+                            <img src="./imgs/school/zheda.png" alt="">
+                        </div>
+
+                        <div class="col-lg-2 col-md-6 col-sm-6  col-12 school-singal">
+                            <img src="./imgs/school/shanda.png" alt="">
+                        </div>
+
+                        <div class="col-lg-2 col-md-6 col-sm-6 col-12 school-singal">
+                            <img src="./imgs/school/dongda.png" alt="">
+                        </div>
+
+                        <div class="col-lg-2 col-md-6 col-sm-6 col-12 school-singal">
+                            <img src="./imgs/school/shannong.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <hr class="school-hr" style="width: 80%; border: none; border-top: 2px solid #eaeaef; color: #eaeaef;">
+
+
+    <div id="clazz-price-tag"></div>
+    <section class="fdb-block price " role="servicePrice" id="clazz-price">
+        <div class="price-school ">
+            <div class="container ">
+                <h2 class="title ">价格</h2>
+                <div class="row price-content">
+                    <div class="col-md-4 ">
+                        <div class="service-style free ">
+                            <h3>免费版</h3>
+                            <p>包含教育生活基本功能</p>
+                            <div class="price-per">
+                                <p>
+                                    <span>
+                                        <i class="fa fa-cny "></i>0</span>
+                                </p>
+                                <p>免费使用</p>
+                            </div>
+                        </div>
+                        <div class="service-detail free-detail ">
+                            <div class="row ">
+                                <div class="col-md-11 col-sm-10 ">
+                                    <ul class="fa-ul ">
+                                        <li>
+                                            <i class="fa-li fa fa-check "></i>&nbsp; &nbsp;新闻发送
+                                        </li>
+                                        <li>
+                                            <i class="fa-li fa fa-check "></i>&nbsp; &nbsp;通知推送
+                                        </li>
+                                        <li>
+                                            <i class="fa-li fa fa-check "></i>&nbsp; &nbsp;课表系统集成
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 ">
+                        <div class="service-style basic ">
+                            <h3>基准版</h3>
+                            <p>包含教育生活所有功能</p>
+                            <div class="price-per">
+                                <p>
+                                    <span>
+                                        <i class="fa fa-cny "></i>10</span>
+                                </p>
+                                <p>/学生/年</p>
+                            </div>
+                        </div>
+                        <div class="service-detail basic-detail ">
+                            <ul class="fa-ul ">
+                                <li>
+                                    <i class="fa-li fa fa-check "></i>&nbsp; &nbsp;新闻发送
+                                </li>
+                                <li>
+                                    <i class="fa-li fa fa-check "></i>&nbsp; &nbsp;通知推送
+                                </li>
+                                <li>
+                                    <i class="fa-li fa fa-check "></i>&nbsp; &nbsp;课表系统集成
+                                </li>
+                                <li>
+                                    <i class="fa-li fa fa-check "></i>&nbsp; &nbsp;新闻后台集成
+                                </li>
+                                <li>
+                                    <i class="fa-li fa fa-check "></i>&nbsp; &nbsp;通知后台集成
+                                </li>
+                                <li>
+                                    <i class="fa-li fa fa-check "></i>&nbsp; &nbsp;图书馆系统集成
+                                </li>
+                                <li>
+                                    <i class="fa-li fa fa-check "></i>&nbsp; &nbsp;相关技术指导
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
+                        <div class="service-style professional">
+                            <h3>定制版</h3>
+                            <p>根据学校需求定制</p>
+                            <div class="price-per">
+                                <p>
+                                    <span>
+                                        <i class="fa fa-cny "> ?</i>
+                                    </span>
+                                </p>
+                                <p>/学生/年</p>
+                            </div>
+                        </div>
+                        <div class="service-detail professional-detail ">
+                            <div class="row ">
+                                <div class="col-md-11 ">
+                                    <ul class="fa-ul ">
+                                        <li>
+                                            <i class="fa-li fa fa-check "></i>&nbsp; &nbsp;新闻发送
+                                        </li>
+                                        <li>
+                                            <i class="fa-li fa fa-check "></i>&nbsp; &nbsp;通知推送
+                                        </li>
+                                        <li>
+                                            <i class="fa-li fa fa-check "></i>&nbsp; &nbsp;课表系统集成
+                                        </li>
+                                        <li>
+                                            <i class="fa-li fa fa-check "></i>&nbsp; &nbsp;新闻后台集成
+                                        </li>
+                                        <li>
+                                            <i class="fa-li fa fa-check "></i>&nbsp; &nbsp;通知后台集成
+                                        </li>
+                                        <li>
+                                            <i class="fa-li fa fa-check "></i>&nbsp; &nbsp;图书馆系统集成
+                                        </li>
+                                        <li>
+                                            <i class="fa-li fa fa-check "></i>&nbsp; &nbsp;相关技术指导
+                                        </li>
+                                        <li>
+                                            <i class="fa-li fa fa-check "></i>&nbsp; &nbsp;校园专业定制
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="fdb-block footer-large" id="clazz-footer">
+        <div class="container ">
+            <div class="row align-items-top text-center text-content">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-sm-left">
+                    <h3>
+                        <strong>Clazz</strong>
+                    </h3>
+                    <nav class="nav flex-column">
+                        <a class="nav-link active " href="#">主页</a>
+                        <a class="nav-link " href="#">功能</a>
+                        <a class="nav-link " href="#">价格</a>
+                        <a class="nav-link " href="#">团队</a>
+                        <a class="nav-link " href="#">联系我们</a>
+                    </nav>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-5 mt-sm-0 text-sm-left">
+                    <h3>
+                        <strong>微公学</strong>
+                    </h3>
+                    <nav class="nav flex-column">
+                        <a class="nav-link active " href="#">隐私政策</a>
+                        <a class="nav-link " href="#">服务条款</a>
+                        <a class="nav-link " href="#">常见问题</a>
+                        <a class="nav-link " href="#">技术支持</a>
+                    </nav>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3 text-md-left mt-5 mt-md-0 ">
+                    <h3>
+                        <strong>关于我们</strong>
+                    </h3>
+                    <p>微公学是服务高校大学生学习和生活的平台。在这里，重新定义大学生态，给每个大学生提供一个有趣充实的大学生活。</p>
+                </div>
+
+                <div class="col-12 col-lg-2 ml-auto text-lg-left mt-4 mt-lg-0 ">
+                    <h3>
+                        <strong>关注我们</strong>
+                    </h3>
+                    <p class="text-h3 ">
+                        <a href="#">
+                            <i class="fa fa-twitter " aria-hidden="true "></i>
+                        </a>&nbsp;&nbsp;
+                        <a href="#">
+                            <i class="fa fa-facebook " aria-hidden="true "></i>
+                        </a>&nbsp;&nbsp;
+                        <a href="#">
+                            <i class="fa fa-instagram " aria-hidden="true "></i>
+                        </a>&nbsp;&nbsp;
+                        <a href="#">
+                            <i class="fa fa-pinterest " aria-hidden="true "></i>
+                        </a>&nbsp;&nbsp;
+                        <a href="#">
+                            <i class="fa fa-google " aria-hidden="true "></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col text-center" id="calzz-footer-date">
+                    © 2017 Clazz. All Rights Reserved
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="my-modal">
+        <div class="modal-dialog modal-sm" id="modal-size">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <a class="close" data-dismiss="modal" style="cursor:pointer">
+                        <span>&times;</span>
+                    </a>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="container" style="padding-left: 10px; padding-right: 10px;">
+                        <div class="login text-center">
+                            <div class="login-code text-center" id="login-code">
+                                <img src="imgs/clazz-code.svg " alt=" " width="160px" height="160px">
+                                <br>
+                                <span>请使用微公学扫一扫登录</span>
+                                <hr>
+                                <div class="margin-bottom-30px">
+                                    <a class="btn-blue" href="#" id="login-use-password">使用密码登录</a>
+                                </div>
+                            </div>
+                            <div class="login-password login-hide" id="login-password">
+                                <form class="form-group" action="">
+                                    <div>
+                                        <h3>登录</h3>
+                                    </div>
+                                    <div class="form-group mt-4">
+                                        <input class="form-control" type="text" placeholder="手机号或邮箱" required="required" />
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" type="password" placeholder="密码" required="required" />
+                                    </div>
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-md btn-block" id="login-btn">&nbsp;登录&nbsp;
+                                        </button>
+                                    </div>
+                                </form>
+                                <div class="mt-2">
+                                    <a class="btn-blue" href="#" id="login-use-code">二维码登录</a>
+                                </div>
+                            </div>
+                            <div id="show-code">
+                                <a class="btn btn-primary" data-toggle="popover" data-trigger="hover" data-placement="top">下载&nbsp;微公学&nbsp;App</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN "
+        crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js " integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4 "
+        crossorigin="anonymous "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js " integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1 "
+        crossorigin="anonymous "></script>
+    <script src="js/index.js "></script>
 </body>
 
 </html>
